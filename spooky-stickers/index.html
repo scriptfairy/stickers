@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Spooky Stickers</title>
+  <title>Workshop: Spooky Stickers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+    }
+    nav {
+      width: 200px;
+      background-color: #222;
+      color: #fff;
+      min-height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 15px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      display: block;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+      flex: 1;
+    }
+    h1 {
+      font-family: 'Creepster', cursive;
+      font-size: 48px;
+      margin-bottom: 5px;
+      color: #e74c3c;
+    }
+    h2 {
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .image-grid img {
+      width: 100%;
+      max-width: 300px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      padding: 5px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Spooky Stickers</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="more-images.html">More Images</a></li>
+      <li><a href="pdf.html">PDF</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Workshop: Spooky Stickers</h1>
+    <h2>Images to practice</h2>
+    <div class="image-grid">
+      <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
+      <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
+      <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3">
+      <img src="https://via.placeholder.com/300x200?text=Image+4" alt="Image 4">
+    </div>
+  </div>
 </body>
 </html>
