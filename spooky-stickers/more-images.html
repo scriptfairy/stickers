@@ -120,7 +120,7 @@
       const btn = document.createElement("a");
       btn.href = sticker.src;
       //btn.download = sticker.title.replace(/\s+/g, "-").toLowerCase() + ".jpg";
-      btn.download = btn.href;
+      btn.download = sticker.src;
       btn.innerHTML = '<button class="download-btn">Download</button>';
 
       card.appendChild(img);
