@@ -23,6 +23,7 @@
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     nav li {
       margin: 15px 0;
@@ -38,9 +39,8 @@
       background: #444;
     }
     .content {
-      margin-left: 200px; /* leave room for nav */
+      margin-left: 200px; /* makes space for the fixed nav */
       padding: 20px;
-      max-width: calc(100% - 200px); /* prevents overflow */
     }
     h1 {
       font-family: 'Creepster', cursive;
@@ -49,7 +49,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
     }
     .card {
@@ -109,7 +109,6 @@
       { title: "Cute Ghost 1", src: "ghost-01.png" },
       { title: "Cute Ghost 2", src: "ghost-02.png" },
       { title: "Cute Ghost 3", src: "ghost-03.png" }
-      
     ];
 
     const grid = document.getElementById("image-grid");
