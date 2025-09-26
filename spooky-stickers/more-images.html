@@ -38,9 +38,9 @@
       background: #444;
     }
     .content {
-      margin-left: 200px; /* space for nav */
+      margin-left: 200px; /* leave room for nav */
       padding: 20px;
-      display: block; /* ensures grid inside works */
+      max-width: calc(100% - 200px); /* prevents overflow */
     }
     h1 {
       font-family: 'Creepster', cursive;
@@ -49,9 +49,8 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      width: 100%;
     }
     .card {
       background: #fff;
