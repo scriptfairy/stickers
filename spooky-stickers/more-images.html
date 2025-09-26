@@ -9,7 +9,6 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      /* removed display: flex */
     }
     nav {
       width: 200px;
@@ -39,8 +38,9 @@
       background: #444;
     }
     .content {
-      margin-left: 200px;
+      margin-left: 200px; /* space for nav */
       padding: 20px;
+      display: block; /* ensures grid inside works */
     }
     h1 {
       font-family: 'Creepster', cursive;
@@ -51,6 +51,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
+      width: 100%;
     }
     .card {
       background: #fff;
